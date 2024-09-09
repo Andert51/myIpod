@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>myIpod Clone</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Protest+Guerrilla&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <audio id="audio"></audio>
+    <div class="music-player">
+        <h1 class="music-name">Song</h1>
+        <p class="artist-name">Artist</p>
+        <div class="disk"></div>
+        <div class="song-slider">
+            <input type="range" value="0" class="seek-bar">
+            <span class="current-time">00:00</span>
+            <span class="song-duration">00:00</span>
+        </div>
+        <div class="controls">
+            <button class="btn backward-btn">
+                <img src="./assets/images/pre.png" alt="">
+            </button>
+
+            <button class="play-btn pause">
+                <span></span>
+                <span></span>
+            </button>
+
+            <button class="btn forward-btn">
+                <img src="./assets/images/nxt.png" alt="">
+            </button>
+        </div>
+    </div>
+    
+    <script src="./js/data.js"></script>
+    <script src="./js/app.js"></script>
+</body>
+</html>
