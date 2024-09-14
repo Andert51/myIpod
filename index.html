@@ -8,8 +8,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Protest+Guerrilla&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
 </head>
 <body>
+  <div class="container">
     <audio id="audio" preload="metadata"></audio>
     <div class="music-player">
         <h1 class="music-name">Song</h1>
@@ -35,6 +37,14 @@
             </button>
         </div>
     </div>
+
+    <div class="song-list">
+        <ul id="song-list">
+            <!-- Las canciones se agregarán aquí dinámicamente -->
+        </ul>
+    </div>
+    
+  </div>
     <script src="./js/data.js"></script>
     <script src="./js/app.js"></script>
 </body>

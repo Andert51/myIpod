@@ -102,3 +102,17 @@ backwardBtn.addEventListener('click', () => {
     setMusic(currentMusic)
     playMusic()
 })
+
+// Lista de canciones para el reproductor:
+const songListElement = document.getElementById('song-list');
+
+// Generar la lista de canciones
+songs.forEach((song, index) => {
+    const li = document.createElement('li');
+    li.innerText = song.name;
+    li.addEventListener('click', () => {
+        setMusic(index); // Reproducir la canción seleccionada
+        playMusic(); // Iniciar la reproducción automática
+    });
+    songListElement.appendChild(li);
+});

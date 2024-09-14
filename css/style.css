@@ -11,15 +11,15 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: aquamarine;
+    background-color: rgb(22, 27, 25);
 }
 
 .music-player {
     width: 350px;
     height: 550px;
     border-radius: 20px;
-    background-color:wheat;
-    box-shadow: 40px 100px rgba(255, 255, 255, 0.5);
+    background-color:rgba(238, 220, 186, 0.941);
+    box-shadow: 40px 100px rgba(93, 214, 84, 0.5);
     padding: 30px;
     overflow: hidden;
     color:darkolivegreen;
@@ -145,7 +145,7 @@ body {
 .play-btn.pause span:nth-child(1){
     width: 35%;
     height: 53%;
-    transform: translate(-50%, -50%);
+    transform: translate(40%, -50%);
     border-radius: 0;
     clip-path: polygon(0 0, 100% 50%, 100% 50%, 0 100%);
 }
@@ -186,4 +186,44 @@ body {
         transform: rotate(360deg);
     }
 
+}
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.song-list {
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 400px;
+    font-style: normal;
+    width: 200px;
+    height: 550px;
+    background-color: wheat;
+    padding: 20px;
+    overflow-y: scroll;
+    border-radius: 20px;
+}
+
+.song-list ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.song-list li {
+    cursor: pointer;
+    padding: 10px;
+    margin: 5px 0;
+    background-color: rgb(237, 241, 245);
+    border-radius: 10px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.song-list li:hover {
+    background-color: lightblue;
 }
